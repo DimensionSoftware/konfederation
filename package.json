@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "a mountable koa app for authentication",
   "main": "dist/index.js",
+  "repository": "https://github.com/DimensionSoftware/konfederation",
   "scripts": {
     "build": "babel src --no-comments --out-dir dist",
     "watch": "babel src --watch --out-dir dist",
