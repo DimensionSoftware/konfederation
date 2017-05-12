@@ -1,0 +1,22 @@
+* <2017-05-12 Fri> This fucking toolchain.
+** https://babeljs.io/docs/plugins/transform-runtime/
+   #+BEGIN_SRC javascript
+    {
+      "plugins": [
+        ["transform-runtime", {
+          "helpers": false,
+          "polyfill": false,
+          "regenerator": true,
+          "moduleName": "babel-runtime"
+        }]
+      ]
+    }
+   #+END_SRC
+** The above incantation lets konfederation be a library that:
+*** uses ES6
+*** can be imported by other code that also uses ES6 (and babel-polyfill in particular).
+*** http://stackoverflow.com/questions/41163977/throw-error-only-one-instance-of-babel-polyfill-is-allowed-when-using-babel
+** This toolchain makes me angry.
+** In other news, I reorganized a bit of code.
+*** What was in index.js is now in app.js.
+*** I wonder if sessions can be shared between the main koa app and a mounted koa app.  Let's find out.
