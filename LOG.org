@@ -3,7 +3,7 @@
    #+BEGIN_SRC javascript
     {
       "plugins": [
-        ["transform-runtime", {
+      [ "transform-runtime", {
           "helpers": false,
           "polyfill": false,
           "regenerator": true,
@@ -20,3 +20,6 @@
 ** In other news, I reorganized a bit of code.
 *** What was in index.js is now in app.js.
 *** I wonder if sessions can be shared between the main koa app and a mounted koa app.  Let's find out.
+** I have a local koa app that I'm using to test konfederation as a library.
+*** I used generator-koa2 to create it.
+*** It worked quite nicely.
