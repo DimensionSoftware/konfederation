@@ -1,2 +1,4 @@
-require('babel-polyfill');
+// require('babel-polyfill');
+require('babel-core/register');
+
 module.exports = require('./app');
